@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid black;
 }
 
 html{
@@ -95,6 +94,7 @@ nav > a{
     justify-content: center;
     gap: 2%;
     width: 90%;
+    padding-top: 3%;
 }
 div.button-container-flex > .button{
     min-height: 20%;
@@ -146,6 +146,7 @@ section.central-section-flex > div > img{
 }
 section.central-section-flex > article > p{
     font-size: medium;
+    padding: 3% 0%;
 }
 .d_back{
     background-color: #f6f6f6;
