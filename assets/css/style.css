@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.header-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aqua;
+    padding: 5px;
+    min-height: 400px;
+}
+.nav-flex{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 40px;
+    background-color: blue;
+    gap: 20%;
+    justify-content: baseline;
+}
+nav > div{
+    background-color: red;
+    height: 100%;
+    width: 15%;
+}
+nav :nth-child(2){
+    flex-grow: 2;
+} 
+.section-flex{
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    min-width: 50%;
+    margin: 7%;
+    background-color: green;
+    align-items: center;
+    gap: 10px;
+} 
+div.text-container > h1{
+    display: block;
+    background-color: white;
+    min-height: 50px;
+}
+.text-container{
+    width: 100%;
+    min-height: 170px;
+    text-align: center;
+    background-color: red;
+}
+.button-container-flex{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+div.button-container-flex > button{
+    width: 100px;
+    height: 20px;
+}
+
+
+/* Sezione centrale */
+.central-section-flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: beige;
+    padding: 5px;
+    min-height: 400px;
+    gap: 10px;
+}
+section.central-section-flex > div, article{
+    min-width:300px;
+    min-height: 200px;
+}
+article > h1, p{
+    display: block;
+    min-height: 150px;
+}
+article > h1{
+    background-color: white;
+}
+article > p{
+    background-color: red;
+}
+section.central-section-flex > div{
+    background-color: blueviolet;
+}
+
+/* Sezione diversa  */
+.last-section-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: beige;
+    padding: 5px;
+    min-height: 600px;
+    gap: 10px;
+}
+#tecnology{
+    min-width:80%;
+    min-height: 200px;
+}
+.last-section-flex > div > h1{
+    background-color: white;
+    display: block;
+    min-height: 50px;
+}
+.last-section-flex > div >p{
+    background-color: red;
+    display: block;
+    height: 100%;
+}
+.last-section-flex > figure{
+    min-width: 80%;
+    min-height: 400px;
+    background-color: darkblue;
+}
+.last-section-flex > div{
+    min-width:40%;
+    min-height: 50px;
+}
+.last-section-flex > div > h2{
+    background-color: white;
+    display: block;
+    min-height: 50px;
+}
+.download{
+    min-width: 100px;
+    min-height: 40px;
+    background-color: yellow;
+}
+.footer-flex{
+    display: flex;
+    width: 80%; 
+    max-height: 400px;
+    margin: auto;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    background-color: rgb(0, 255, 0);
+    padding: 10px;
+}
+.footer-flex > div{
+    min-height: 150px;
+    min-width: 80px;
+    flex-grow: 1;
+    background-color: blueviolet;
+}
+.footer-flex :first-child{
+    flex-grow: 2;
+}
+.final-section-flex{
+    display: flex;
+    flex-direction: row;
+
+    background-color: lightblue;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+}
+#discord_logo{
+    background-color: blue;
+    max-width: 100px;
+    height: 50px;
+}
+.final-section-flex > button{
+    background-color: white;
+    width: 100px;
+    height: 50px;
+ 
+}
+.clearfix::after{
+    content:"";
+    display: table;
+    clear: both;
+}
