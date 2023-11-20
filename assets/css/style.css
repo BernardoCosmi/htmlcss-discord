@@ -9,9 +9,10 @@
 
 html{
     font-family: 'Yantramanav', sans-serif;
+    font-weight: 500;
 }
 
-
+/* Header General */
 .header-flex{
     display: flex;
     flex-direction: column;
@@ -20,10 +21,11 @@ html{
     background-position: center;
     background-size: cover;
     padding: 5px;
-    min-height: 300px;
+    min-height: 450px;
 }
 
 
+/* Header > Nav */
 .nav-flex{
     display: flex;
     flex-direction: row;
@@ -32,13 +34,11 @@ html{
     gap: 10%;
     justify-content: baseline;
     align-items: center;
-    font-weight: 500;
 }
 nav > div, img{
     flex-grow: 1;
     color: white;
 }
-
 nav>img{
     max-width: fit-content;
     max-height: fit-content;
@@ -54,127 +54,148 @@ nav>img{
     gap: 5%;
     list-style-type: none;
     flex-grow: 1;
-}
-.list-menù > li{
     text-transform: capitalize;
 }
-.access_button > a{
+nav > a{
     background-color: white;
     color: black;
     text-decoration: none;
+    text-align: right;
     border-radius: 25px;
-    padding: 3% 6%;
+    padding: 1% 2%;
 }
 
 
-
-
+/* Header > Section */
 .section-flex{
     display: flex;
     flex-direction: column;
-    min-height: 200px;
-    min-width: 50%;
-    margin: 7%;
-    background-color: green;
+    max-width: 35%;
     align-items: center;
-    gap: 10px;
+    justify-content: flex-end;
+    color: white;
+    margin-top: 3%;
 } 
-div.text-container > h1{
-    display: block;
-    background-color: white;
-    min-height: 50px;
-}
-.text-container{
-    width: 100%;
-    min-height: 170px;
+
+/* Header > Section > h1, p*/
+.section-flex > h1{
+    font-size: xx-large;
     text-align: center;
-    background-color: red;
 }
+.section-flex > p{
+    margin: 5% 0% 0%;
+    text-align: center;
+}
+
+
+/* Header > Section > button-container-flex */
 .button-container-flex{
     display: flex;
-    justify-content: space-around;
-    width: 70%;
-    margin-bottom: 5px;
-    padding: 5px;
-}
-div.button-container-flex > button{
-    width: 100px;
-    height: 20px;
-}
-
-
-/* Sezione centrale */
-.central-section-flex{
-    display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: beige;
-    padding: 5px;
-    min-height: 400px;
-    gap: 10px;
+    gap: 2%;
+    width: 90%;
 }
-section.central-section-flex > div, article{
-    min-width:300px;
-    min-height: 200px;
+div.button-container-flex > .button{
+    min-height: 20%;
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 600;
+    font-size: medium;
+    border-radius: 25px;
+    padding: 2% 5%;
 }
-article > h1, p{
-    display: block;
-    min-height: 150px;
-}
-article > h1{
+.button.white{
+    color: black;
     background-color: white;
 }
-article > p{
-    background-color: red;
+.button.black{
+    color: white;
+    background-color: black;
+} 
+
+
+/* Sezione centrale general*/
+.container-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 0%;
+    background-color: #ffffff;
+}
+.central-section-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    max-width: 80%;
+}
+section.central-section-flex > article > h1{
+    font-size: xx-large;
+    text-align: start;
+    font-weight: 900;
 }
 section.central-section-flex > div{
-    background-color: blueviolet;
+    min-width: 40%;
+    max-width: 70%;
+    min-height: 40%;
+    max-height: 70%;
+}
+section.central-section-flex > div > img{
+    max-width: 100%;
+    max-height: 100%;
+}
+section.central-section-flex > article > p{
+    font-size: medium;
+}
+.d_back{
+    background-color: #f6f6f6;
 }
 
+
 /* Sezione diversa  */
+.lats-container-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .last-section-flex{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: beige;
-    padding: 5px;
-    min-height: 600px;
+    padding: 3% 0%;
+    width: 80%;
     gap: 10px;
+    margin: auto;
 }
-#tecnology{
-    min-width:80%;
-    min-height: 200px;
+
+.last-section-flex > h1{
+    font-size: xx-large;
+    font-weight: 900;
 }
-.last-section-flex > div > h1{
-    background-color: white;
-    display: block;
-    min-height: 50px;
+.last-section-flex >p{
+    font-size: medium;
 }
-.last-section-flex > div >p{
-    background-color: red;
-    display: block;
-    height: 100%;
+.last-section-flex > img{
+    max-width: 100%;
+    min-width: 40%;
 }
-.last-section-flex > figure{
-    min-width: 80%;
-    min-height: 400px;
-    background-color: darkblue;
+.last-section-flex > h2{
+    padding: 3% 2%;
+    background-image: url(../img/stars.svg);
+    background-position: center;
+    background-size: contain;
 }
-.last-section-flex > div{
-    min-width:40%;
-    min-height: 50px;
-}
-.last-section-flex > div > h2{
-    background-color: white;
-    display: block;
-    min-height: 50px;
-}
+
 .download{
-    min-width: 100px;
-    min-height: 40px;
-    background-color: yellow;
+    min-height: 20%;
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 600;
+    font-size: medium;
+    background-color: #8EA1E1;
+    color: white;
+    border-radius: 25px;
+    padding: 1% 3%;
 }
 .footer-flex{
     display: flex;
